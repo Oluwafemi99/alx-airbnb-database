@@ -19,3 +19,7 @@ CREATE INDEX idx_bookings_property_id ON bookings(property_id);
 CREATE INDEX idx_bookings_start_end_date ON bookings(start_date, end_date);
 CREATE INDEX idx_bookings_status ON bookings(status);
 CREATE INDEX idx_bookings_created_at ON bookings(created_at);
+
+
+EXPLAIN ANALYZE 
+SELECT * FROM bookings WHERE user_id = 2;
