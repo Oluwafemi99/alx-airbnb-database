@@ -55,6 +55,8 @@ SELECT
     --payments
     p.payment_id,
     p.amount,
+ FROM
+    bookings b
 
 JOIN
     users u ON b.user_id = u.user_id
