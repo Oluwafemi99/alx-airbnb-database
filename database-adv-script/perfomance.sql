@@ -22,6 +22,9 @@ SELECT
     p.method,
     p.paid_at
 
+FROM
+    bookings b
+
 -- Join users
 JOIN
     users u ON b.user_id = u.user_id
