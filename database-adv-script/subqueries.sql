@@ -14,7 +14,7 @@ WHERE
     ) > 4.0;
 
 
---- SQL correlated subquery to find users who have made more than 3 bookings
+-- SQL correlated subquery to find users who have made more than 3 bookings
 
 SELECT
     u.user_id,
@@ -28,4 +28,3 @@ WHERE
         FROM bookings b 
         WHERE b.user_id = u.user_id
     ) > 3;
-
