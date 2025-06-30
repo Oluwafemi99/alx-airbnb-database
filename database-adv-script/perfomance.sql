@@ -30,7 +30,10 @@ JOIN
     properties p ON b.property_id = p.property_id
 -- Join Payments
 LEFT JOIN
-    payments pay ON b.booking_id = pay.booking_id;
+    payments pay ON b.booking_id = pay.booking_id
+
+WHERE b.status IS NOT NULL 
+AND u.name IS NOT NULL;
 
 
 --Refactored query for better optimization
