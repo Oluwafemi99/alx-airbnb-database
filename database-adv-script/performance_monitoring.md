@@ -10,10 +10,11 @@ Query Analysis Using `EXPLAIN ANALYZE`
 Example Query Tested:
 
 ```sql
+EXPLAIN
 SELECT *
 FROM bookings
 WHERE start_date BETWEEN '2023-01-01' AND '2023-12-31';
-
+```
 --- before optimization
 Sequential scan across all rows in the bookings table
 High execution time
